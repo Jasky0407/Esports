@@ -1,0 +1,179 @@
+/* Jaskaran Singh 8917470*/
+html {
+  font: 20px "Arial", sans-serif; 
+}
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: hsla(290, 90%, 49%, 0.922);
+  font: italic small-caps bold 12px/30px Georgia, serif;
+  padding: 2em;
+  margin: 0;
+}
+.form {
+  border: 5px solid black;
+  padding: 1em; 
+  width: 50%; 
+  margin-bottom: 1rem;
+}
+.structural {
+  margin: 1rem;
+  width:100%;
+  padding: 10px;
+  border: 2px solid black;
+}
+h1 {
+  font-size: 2.5rem;
+  color: rgb(251, 255, 0);
+}
+nav li a {
+  padding: 1em;
+  color: rgba(251, 255, 0);
+}
+section {
+  display: flex;
+  flex-direction: row;
+  flex: 4 8%;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+header {
+  flex: 1 10%;
+  background-color: hsl(237, 100%, 51%);
+}
+nav {
+  flex: 1 5%;
+}
+main {
+  flex: 2 1 70%;
+  gap: 1rem;
+  display: flex;  
+  flex-wrap: wrap; 
+}
+aside {
+  flex: 1 2 30%;
+  background-color: hsl(246, 100%, 51%);
+}
+
+footer {
+  flex: 1 5%;
+  background-color: hsl(116, 100%, 48%);
+}
+#paragraph1 {
+  color: rgb(0, 255, 38);
+}
+#paragraph2 {
+  color: rgb(0, 255, 72);
+}
+p::first-letter {
+  color: rgba(0, 0, 0, 0.827);
+}
+aside a:hover {
+  color: rgb(204, 0, 0);
+}
+.form {
+  border: 5px solid black;
+  padding: 5px;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="submit"],
+form select,
+form option {
+  width: 50%;
+  display: block;
+  height: 2em;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  height: 2em;
+  width: 2em;
+}
+
+form textarea {
+  width: 50%;
+  display: block;
+}
+
+form fieldset {
+  border: none;
+}
+
+footer p {
+  font-size: 0.75em;
+}
+
+.structural ul {
+  list-style-type: disc;
+}
+
+.structural li {
+  color: rgb(251, 255, 0);
+}
+
+.structural a {
+  color: rgba(251, 255, 0);
+}
+
+.structural nav ul {
+  padding: 0;
+  margin: 0;
+}
+.structural nav li {
+  display: inline;
+}
+
+.structural nav a {
+  border: 2px solid indigo;
+  color: indigo;
+  background-color: cornsilk;
+  padding: 5px 10px;
+}
+
+.structural nav a:hover {
+  border: 3px solid cornsilk;
+  color: cornsilk;
+  background-color: indigo;
+}
+
+nav li a {
+  padding: 1em;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+#gallery figure {
+  
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#gallery figure img {
+  width: 80%;
+  height: 80%;
+}
+#gallery figure figcaption {
+  margin-top: 1rem;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+  #gallery {
+    grid-template-columns: 1fr;
+  }
+}
